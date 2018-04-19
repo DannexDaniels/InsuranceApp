@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dannextech.apps.insuranceapp.MainActivity"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/insurance"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/ivLogo"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btSignIn"
+            android:layout_below="@+id/ivLogo"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:background="@color/colorAccent"
+            android:text="LOGIN"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:onClick="login"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btSignUp"
+            android:layout_below="@+id/btSignIn"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:background="@color/colorAccent"
+            android:text="CREATE ACCOUNT"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:onClick="createAccount"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
